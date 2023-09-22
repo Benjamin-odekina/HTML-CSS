@@ -20,6 +20,7 @@ html {
 .container {
     max-width: 375px;
     margin: 0 auto;
+    margin-top: 6.25%;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
 }
