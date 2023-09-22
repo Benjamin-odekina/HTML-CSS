@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Fraunces;
+    font-style: normal;
+    src: url(https://fonts.google.com/specimen/Fraunces);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500, 700;
+    src: url(https://fonts.google.com/specimen/Montserrat) format(woff);
+    
+}
+
+
+html {
+    background-color: hsl(30, 38%, 92%);
+    line-height: 1.5;
+}
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 940px;
+        display: flex;
+    }
+
+}
+
+.image {
+    width: 375px;
+    height: 250px;
+    background: url(../images/image-product-mobile.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+@media screen and (min-width: 1440px) {
+    .image {
+        background: url(../images/image-product-desktop.jpg) no-repeat;
+        background-size: cover;
+        border-radius: 10px 0 0 10px;
+        height: 700px;
+        flex: 1;
+    }
+}
+.image p {
+    overflow: hidden;
+    visibility: hidden;
+}
+.textarea {
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.textarea .pef {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+ }
+.textarea .main {
+    font-family: Fraunces, sans-serif;
+    font-weight:700;
+    font-size: 40px;
+    line-height: 0.8;
+}
+
+@media screen and (min-width: 1440px) {
+    .textarea {
+        flex: 1;
+        padding: 40px;
+        box-sizing: border-box;
+        font-size: 25px;
+    }
+    .textarea .main {
+        font-size: 50px;
+    }    
+}
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.price .pricebox:nth-child(1) {
+     margin-right: 10px;
+     font-size: 30px;
+     font-weight: bold;
+     color: hsla(165, 77%, 22%, 0.932);
+}
+.price .pricebox:nth-child(2) {
+    text-decoration: line-through;
+}
+.cart-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Fraunces,sans-serif;
+    background-color: hsla(165, 77%, 22%, 0.932);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.cart-box:hover {
+     background-color: hsla(164, 66%, 8%, 0.932);
+}
