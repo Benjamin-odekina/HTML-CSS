@@ -24,10 +24,12 @@ html {
     border-radius: 10px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 940px) {
     .container {
         max-width: 940px;
         display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
     }
 
 }
@@ -39,13 +41,14 @@ html {
     background-size: cover;
     border-radius: 10px 10px 0 0;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 940px) {
     .image {
         background: url(../images/image-product-desktop.jpg) no-repeat;
         background-size: cover;
         border-radius: 10px 0 0 10px;
-        height: 700px;
+        height: 600px;
         flex: 1;
+        border-radius: 20px 0 0 20px;
     }
 }
 .image p {
@@ -69,15 +72,17 @@ html {
     line-height: 0.8;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 940px) {
     .textarea {
         flex: 1;
         padding: 40px;
         box-sizing: border-box;
         font-size: 25px;
+        height: 600px;
+        box-sizing: border-box;
     }
     .textarea .main {
-        font-size: 50px;
+        font-size: 45px;
     }    
 }
 .price {
@@ -91,19 +96,31 @@ html {
      font-weight: bold;
      color: hsla(165, 77%, 22%, 0.932);
 }
+@media screen and (min-width: 940px) {
+    .price .pricebox:nth-child(1) {
+        font-size: 40px;
+    }
+}
 .price .pricebox:nth-child(2) {
     text-decoration: line-through;
 }
-.cart-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Fraunces,sans-serif;
-    background-color: hsla(165, 77%, 22%, 0.932);
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
     color: hsl(0, 0%, 100%);
+    padding: 15px 0;
     border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
     margin-bottom: 20px;
-}
-.cart-box:hover {
-     background-color: hsla(164, 66%, 8%, 0.932);
-}
+  }
+  
+  .button:hover {
+    background-color: hsl(158, 36%, 20%);
+  }
+  .button img {
+    margin-right: 10px;
+  }
