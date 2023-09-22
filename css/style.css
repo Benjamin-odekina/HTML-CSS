@@ -57,6 +57,7 @@ html {
 }
 .textarea {
     padding: 0 20px;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
 }
 
@@ -98,11 +99,14 @@ html {
 }
 @media screen and (min-width: 940px) {
     .price .pricebox:nth-child(1) {
+        font-family: Fraunces, sans-serif;
         font-size: 40px;
     }
 }
 .price .pricebox:nth-child(2) {
     text-decoration: line-through;
+    font-size: 20px;
+    margin-left: 15px;
 }
 .button {
     background-color: hsl(158, 36%, 37%);
